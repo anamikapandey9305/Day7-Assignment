@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery - CSS Grid</title>
+  <link rel="stylesheet" href="gridgallery.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery-container {
+      width: 900px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .gallery-container img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border: 2px solid #fff;
+      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery-container">
+    <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Image 1">
+    <img src="https://www.w3schools.com/howto/img_forest.jpg" alt="Image 2">
+    <img src="https://media.istockphoto.com/id/1369303790/photo/cappadocia-valley-at-sunrise.jpg?s=612x612&w=0&k=20&c=bgTvGXpstLl2x1xQMsIsdQ84n6nKg_2ArO-TVwyNxSU=" alt="Image 3">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/df/65/c1/caption.jpg?w=1200&h=-1&s=1" alt="Image 4">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbDBJ-TYtmoI4j3mNI2_9zDJ1OZMGwZTQkcpFQfYhJYT_vHCNfUkOl0Vn55iECCO-rlDc&usqp=CAU" alt="Image 5">
+    <img src="https://www.backroadstouring.com/sites/default/files/styles/landscape_desktop/public/2025-04/bmvzz5-mountains-valleys-and-lakes-of-switzerland-oberland-hero.jpg.jpg?itok=3aivHlm6" alt="Image 6">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzo95gX4w3hKjyFTzQihIytpZrmMf218L4gg&s" alt="Image 7">
+    <img src="https://www.investopedia.com/thmb/FWlJID2iqBpM0xtgazbrxc4MQNE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1690558406-bf457ffc05eb40fab824b3ee30acd200.jpg" alt="Image 8">
+  </div>
+
+</body>
+</html>
